@@ -3,7 +3,7 @@
 (cl:in-package :cl-user)
 
 (defpackage :srfi-23
-  (:shadow :error)
+  (:use)
   (:export :error))
 
 (defpackage :srfi-23-internal
