@@ -1,13 +1,13 @@
 ;;;; package.lisp
 
-(cl:in-package :cl-user)
+(cl:in-package cl-user)
 
-(defpackage :srfi-23
+(defpackage "https://github.com/g000001/srfi-23"
   (:use)
-  (:export :error))
+  (:export error))
 
-(defpackage :srfi-23-internal
-  (:use :srfi-23 :cl :fiveam)
-  (:shadowing-import-from :srfi-23
-                          :error))
+(defpackage "https://github.com/g000001/srfi-23#internals"
+  (:use "https://github.com/g000001/srfi-23" cl)
+  (:shadowing-import-from "https://github.com/g000001/srfi-23"
+                          error))
 
