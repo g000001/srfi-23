@@ -10,4 +10,3 @@
   (:use "https://github.com/g000001/srfi-23" cl)
   (:shadowing-import-from "https://github.com/g000001/srfi-23"
                           error))
-
